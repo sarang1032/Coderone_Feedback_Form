@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h1>Coderone Feedback Form</h1>
+    <form action="/submit-feedback" method="post">
+        <div class="form">
+            <div class="innerform">
+                <div id="namefield" class="basefield field">
+                    <label for="name">Name:</label>
+                    
+                    <input type="text" name="name" id="name">
+                </div>
+                <div id="numberfield" class="basefield field">
+                    <label for="number">Contact Number: </label>
+                    <input type="text" name="number" id="number">
+                </div>
+                <div id="emailfield" class="basefield field">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div id="feedbackfield" class="basefield field">
+                    <label for="feedback">Feedback: </label>
+                    <textarea name="feedback" id="feedback" cols="30" rows="2"></textarea>
+                </div>
+                <div id="submitfield" class="field">
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+            <div class="image">
+                <img src="images/coderone_logo.webp" alt="logo">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
